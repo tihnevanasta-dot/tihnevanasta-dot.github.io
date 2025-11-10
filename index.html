@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<title>Гра "В кого більше число"</title>
+<body>
+    <header>
+        <h1>Гра "В кого більше число"</h1>
+        <p>Гра триває до 3 перемог. Для того щоб почати гру натисніть кнопку "Згенерувати числа"</p>
+    </header>
+
+    <div class="game-container">
+        <div class="player-card">
+            <div class="player-name" id="user-name">Користувач</div>
+            <div class="score">Перемоги: <span id="user-score">0</span></div>
+            <div class="number-display" id="user-number">-</div>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="player-card">
+            <div class="player-name">Комп'ютер</div>
+            <div class="score">Перемоги: <span id="computer-score">0</span></div>
+            <div class="number-display" id="computer-number">-</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="generate-btn">Згенерувати числа</button>
+        <button id="reset-btn">Почати нову гру</button>
+        <div class="round-result" id="round-result"></div>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>
